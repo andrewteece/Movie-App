@@ -61,7 +61,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /*justify-content: center; */
 }
 
 /* Movie Styles */
@@ -72,7 +72,7 @@ main {
   margin: 1rem;
   background-color: var(--clr-secondary);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -97,15 +97,15 @@ main {
   font-weight: bold;
 }
 
-.movie-info span.green {
+.movie--info span.green {
   color: hsl(120, 73%, 75%);
 }
 
-.movie-info span.orange {
+.movie--info span.orange {
   color: hsl(39, 100%, 50%);
 }
 
-.movie-info span.red {
+.movie--info span.red {
   color: hsl(0, 100%, 50%);
 }
 
@@ -115,10 +115,11 @@ main {
   bottom: 0;
   right: 0;
   max-height: 100%;
+  padding: 2rem;
   background-color: hsl(0, 0%, 100%);
   transform: translateY(101%);
+  transition: transform 0.5s ease-in;
   overflow-y: auto;
-  transition: transform 0.3s ease-in;
 }
 
 .movie:hover .overview {
